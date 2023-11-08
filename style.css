@@ -1,0 +1,97 @@
+  <style>
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+}
+.confetti-container 
+{
+    height: 100%;
+    padding-top: 1px;s
+}
+
+.confetti {
+    width: 10px;
+    height: 15px;
+    position: fixed;
+    border-radius: 5% 40% 5% 40% ;
+    animation: confetti-fall 10s linear;
+}
+
+@keyframes confetti-fall 
+{
+    0%
+    {
+        transform: translateY(-100vh);
+        opacity:1;
+    }
+    100% 
+    {
+        transform: translateY(100vh);
+        opacity: 0.3;
+    }
+}
+.container 
+{
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+h1 
+{
+    color: #007BFF;
+}
+
+.game 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.cell 
+{
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.status 
+{
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+.reset-button 
+{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.reset-button:hover 
+{
+    background-color: #0056b3;
+}
+
+</style>
